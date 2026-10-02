@@ -11,8 +11,6 @@ public class NotemapApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(NotemapApplication.class, args);
-
-
 	}
 
 
