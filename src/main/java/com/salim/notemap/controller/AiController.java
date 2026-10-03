@@ -18,6 +18,7 @@ public class AiController {
     private final ChatClient chatClient;
     private final PdfAnalyzer pdfAnalyzer;
 
+
     @GetMapping("/ai")
     public String getAiResponse(@RequestParam(required = false) String query){
 
@@ -50,4 +51,6 @@ public class AiController {
 
         return ResponseEntity.ok(response);
     }
+
+
 }

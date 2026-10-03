@@ -12,10 +12,9 @@ public class PdfTokenSplitter implements DataTokenSplitter{
     public List<Document> splitData(List<Document> documents) {
 
         TokenTextSplitter tokenTextSplitter = TokenTextSplitter.builder()
-                .withChunkSize(1000)
-                .withMinChunkSizeChars(400)
+                .withChunkSize(250)
+                .withMinChunkSizeChars(200)
                 .withMinChunkLengthToEmbed(10)
-                .withMaxNumChunks(5000)
                 .withKeepSeparator(true)
                 .build();
 
